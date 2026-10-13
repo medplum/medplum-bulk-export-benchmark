@@ -1,0 +1,5 @@
+node_modules/
+# Per-tier project state, including client secrets
+state/
+results.jsonl
+bundles/

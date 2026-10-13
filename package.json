@@ -1,0 +1,32 @@
+{
+  "name": "medplum-bulk-export-benchmark",
+  "version": "0.1.0",
+  "description": "Benchmark FHIR Bulk Data Export ($export) on a Medplum server with synthetic patients",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node src/generate.ts",
+    "load": "node src/load.ts",
+    "export": "node src/export.ts",
+    "report": "node src/report.ts",
+    "typecheck": "tsc"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "dependencies": {
+    "@medplum/core": "5.2.3"
+  },
+  "devDependencies": {
+    "@medplum/fhirtypes": "5.2.3",
+    "@types/node": "24.19.2",
+    "prettier": "3.9.9",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.2.0"
+  }
+}
